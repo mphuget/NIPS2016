@@ -10,11 +10,11 @@ https://arxiv.org/abs/1606.03432
 Abstract:
 >Gibbs sampling is a Markov Chain Monte Carlo sampling technique that iteratively samples variables from their conditional >distributions. There are two common scan orders for the variables: random scan and systematic scan. Due to the benefits of locality >in hardware, systematic scan is commonly used, even though most statistical guarantees are only for random scan. While it has been >conjectured that the mixing times of random scan and systematic scan do not differ by more than a logarithmic factor, we show by >counterexample that this is not the case, and we prove that that the mixing times do not differ by more than a polynomial factor >under mild conditions. To prove these relative bounds, we introduce a method of augmenting the state space to study systematic scan >using conductance.
 
-* ## Deep ADMM-Net for Compressive Sensing MRI
+* **Deep ADMM-Net for Compressive Sensing MRI**
 
 Yan Yang, Xi'an Jiaotong University; Jian Sun*, Xi'an Jiaotong University; Huibin Li, ; Zongben Xu, 
 
-* ## A scaled Bregman theorem with applications
+* **A scaled Bregman theorem with applications**
 
 Richard NOCK, Data61 and ANU; Aditya Menon*, ; Cheng Soon Ong, Data61
 
@@ -23,11 +23,20 @@ http://arxiv.org/abs/1607.00360
 Abstract :
 >Bregman divergences play a central role in the design and analysis of a range of machine learning algorithms. This paper explores >the use of Bregman divergences to establish reductions between such algorithms and their analyses. We present a new scaled >isodistortion theorem involving Bregman divergences (scaled Bregman theorem for short) which shows that certain "Bregman >distortions'" (employing a potentially non-convex generator) may be exactly re-written as a scaled Bregman divergence computed over >transformed data. Admissible distortions include geodesic distances on curved manifolds and projections or gauge-normalisation, >while admissible data include scalars, vectors and matrices. 
 >Our theorem allows one to leverage to the wealth and convenience of Bregman divergences when analysing algorithms relying on the >aforementioned Bregman distortions. We illustrate this with three novel applications of our theorem: a reduction from multi-class >density ratio to class-probability estimation, a new adaptive projection free yet norm-enforcing dual norm mirror descent algorithm, >and a reduction from clustering on flat manifolds to clustering on curved manifolds. Experiments on each of these domains validate >the analyses and suggest that the scaled Bregman theorem might be a worthy addition to the popular handful of Bregman divergence >properties that have been pervasive in machine learning.
->Swapout: Learning an ensemble of deep architectures
+>
+
+* **Swapout: Learning an ensemble of deep architectures**
 
 Saurabh Singh*, UIUC; Derek Hoiem, UIUC; David Forsyth, UIUC
+
+http://arxiv.org/abs/1605.06465
+
+Abstract: 
+>We describe Swapout, a new stochastic training method, that outperforms ResNets of identical network structure yielding impressive >results on CIFAR-10 and CIFAR-100. Swapout samples from a rich set of architectures including dropout, stochastic depth and residual >architectures as special cases. When viewed as a regularization method swapout not only inhibits co-adaptation of units in a layer, >similar to dropout, but also across network layers. We conjecture that swapout achieves strong regularization by implicitly tying >the parameters across layers. When viewed as an ensemble training method, it samples a much richer set of architectures than >existing methods such as dropout or stochastic depth. We propose a parameterization that reveals connections to exiting >architectures and suggests a much richer set of architectures to be explored. We show that our formulation suggests an efficient >training method and validate our conclusions on CIFAR-10 and CIFAR-100 matching state of the art accuracy. Remarkably, our 32 layer >wider model performs similar to a 1001 layer ResNet model.
+
  
-On Regularizing Rademacher Observation Losses
+* **On Regularizing Rademacher Observation Losses**
+
 Richard NOCK*, Data61 and ANU
  
 Without-Replacement Sampling for Stochastic Gradient Methods

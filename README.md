@@ -1,7 +1,7 @@
 # NIPS2016
 This project collects the different accepted papers for NIPS 2016 and their link to Arxiv or Gitxiv
 
-* Scan Order in Gibbs Sampling: Models in Which it Matters and Bounds on How Much
+* ## Scan Order in Gibbs Sampling: Models in Which it Matters and Bounds on How Much
 
 Bryan He*, Stanford University; Christopher De Sa, Stanford University; Ioannis Mitliagkas, ; Christopher Ré, Stanford University
 
@@ -10,14 +10,21 @@ https://arxiv.org/abs/1606.03432
 Abstract:
 >Gibbs sampling is a Markov Chain Monte Carlo sampling technique that iteratively samples variables from their conditional >distributions. There are two common scan orders for the variables: random scan and systematic scan. Due to the benefits of locality >in hardware, systematic scan is commonly used, even though most statistical guarantees are only for random scan. While it has been >conjectured that the mixing times of random scan and systematic scan do not differ by more than a logarithmic factor, we show by >counterexample that this is not the case, and we prove that that the mixing times do not differ by more than a polynomial factor >under mild conditions. To prove these relative bounds, we introduce a method of augmenting the state space to study systematic scan >using conductance.
 
+* ## Deep ADMM-Net for Compressive Sensing MRI
 
-Deep ADMM-Net for Compressive Sensing MRI
 Yan Yang, Xi'an Jiaotong University; Jian Sun*, Xi'an Jiaotong University; Huibin Li, ; Zongben Xu, 
- 
-A scaled Bregman theorem with applications
+
+* ## A scaled Bregman theorem with applications
+
 Richard NOCK, Data61 and ANU; Aditya Menon*, ; Cheng Soon Ong, Data61
- 
-Swapout: Learning an ensemble of deep architectures
+
+http://arxiv.org/abs/1607.00360
+
+Abstract :
+>Bregman divergences play a central role in the design and analysis of a range of machine learning algorithms. This paper explores >the use of Bregman divergences to establish reductions between such algorithms and their analyses. We present a new scaled >isodistortion theorem involving Bregman divergences (scaled Bregman theorem for short) which shows that certain "Bregman >distortions'" (employing a potentially non-convex generator) may be exactly re-written as a scaled Bregman divergence computed over >transformed data. Admissible distortions include geodesic distances on curved manifolds and projections or gauge-normalisation, >while admissible data include scalars, vectors and matrices. 
+>Our theorem allows one to leverage to the wealth and convenience of Bregman divergences when analysing algorithms relying on the >aforementioned Bregman distortions. We illustrate this with three novel applications of our theorem: a reduction from multi-class >density ratio to class-probability estimation, a new adaptive projection free yet norm-enforcing dual norm mirror descent algorithm, >and a reduction from clustering on flat manifolds to clustering on curved manifolds. Experiments on each of these domains validate >the analyses and suggest that the scaled Bregman theorem might be a worthy addition to the popular handful of Bregman divergence >properties that have been pervasive in machine learning.
+>Swapout: Learning an ensemble of deep architectures
+
 Saurabh Singh*, UIUC; Derek Hoiem, UIUC; David Forsyth, UIUC
  
 On Regularizing Rademacher Observation Losses

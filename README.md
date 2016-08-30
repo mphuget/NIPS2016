@@ -39,102 +39,245 @@ Abstract:
 
 Richard NOCK*, Data61 and ANU
  
-Without-Replacement Sampling for Stochastic Gradient Methods
+http://users.cecs.anu.edu.au/~rnock/nips2016-n-web.pdf
+
+Abstract:
+>It has recently been shown that supervised learning linear classifiers with two of
+>the most popular losses, the logistic and square loss, is equivalent to optimizing an
+>equivalent loss over sufficient statistics about the class: Rademacher observations
+>(rados). It has also been shown that learning over rados brings solutions to two
+>prominent problems for which the state of the art of learning from examples can be
+>comparatively inferior and in fact less convenient: (i) protecting and learning from
+>private examples, (ii) learning from distributed datasets without entity resolution.
+>Bis repetita placent: the two proofs of equivalence are different and rely on specific
+>properties of the corresponding losses, so whether these can be unified and generalized
+>inevitably comes to mind. This is our first contribution: we show how they can
+>be fit into the same theory for the equivalence between example and rado losses.
+>As a second contribution, we show that the generalization unveils a surprising
+>new connection to regularized learning, and in particular a sufficient condition
+>under which regularizing the loss over examples is equivalent to regularizing the
+>rados (i.e. the data) in the equivalent rado loss, in such a way that an efficient
+>algorithm for one regularized rado loss may be as efficient when changing the
+>regularizer. This is our third contribution: we give a formal boosting algorithm
+>for the regularized exponential rado-loss which boost with any of the ridge, lasso,
+>SLOPE, `1, or elastic net regularizer, using the same master routine for all. Because
+>the regularized exponential rado-loss is the equivalent of the regularized logistic
+>loss over examples we obtain the first efficient proxy to the minimization of the
+>regularized logistic loss over examples using such a wide spectrum of regularizers.
+>Experiments display that regularization significantly improves rado-based learning
+>and compares favourably with example-based learning.
+
+* **Without-Replacement Sampling for Stochastic Gradient Methods**
+
 Ohad Shamir*, Weizmann Institute of Science
- 
-Fast and Provably Good Seedings for k-Means
+
+https://arxiv.org/abs/1603.00570
+
+Abstract:
+>Stochastic gradient methods for machine learning and optimization problems are usually analyzed assuming data points are sampled >with replacement. In practice, however, sampling without replacement is very common, easier to implement in many cases, and often >performs better. In this paper, we provide competitive convergence guarantees for without-replacement sampling, under various >scenarios, for three types of algorithms: Any algorithm with online regret guarantees, stochastic gradient descent, and SVRG. A >useful application of our SVRG analysis is a nearly-optimal algorithm for regularized least squares in a distributed setting, in >terms of both communication complexity and runtime complexity, when the data is randomly partitioned and the condition number can be >as large as the data size (up to logarithmic factors). Our proof techniques combine ideas from stochastic optimization, adversarial >online learning, and transductive learning theory, and can potentially be applied to other stochastic optimization and learning >problems.
+
+* **Fast and Provably Good Seedings for k-Means**
+
 Olivier Bachem*, ETH Zurich; Mario Lucic, ETH Zurich; Hamed Hassani, ETH Zurich; Andreas Krause, 
- 
-Unsupervised Learning for Physical Interaction through Video Prediction
+
+Abstract:
+>Seeding - the task of finding initial cluster centers - is critical in obtaining high-quality clusterings for k-Means. However, >k-means++ seeding, the state of the art algorithm, does not scale well to massive datasets as it is inherently sequential and >requires k full passes through the data. It was recently shown that Markov chain Monte Carlo sampling can be used to efficiently >approximate the seeding step of k-means++. However, this result requires assumptions on the data generating distribution. We propose >a simple yet fast seeding algorithm that produces *provably* good clusterings even *without assumptions* on the data. Our analysis >shows that the algorithm allows for a favourable trade-off between solution quality and computational cost, speeding up k-means++ >seeding by up to several orders of magnitude. We validate our theoretical results in extensive experiments on a variety of >real-world data sets.
+
+* **Unsupervised Learning for Physical Interaction through Video Prediction**
+
 Chelsea Finn*, Google, Inc.; Ian Goodfellow, ; Sergey Levine, University of Washington
  
-Matrix Completion and Clustering in Self-Expressive Models
+http://arxiv.org/abs/1605.07157
+
+Abstract:
+>A core challenge for an agent learning to interact with the world is to predict how its actions affect objects in its environment. >Many existing methods for learning the dynamics of physical interactions require labeled object information. However, to scale >real-world interaction learning to a variety of scenes and objects, acquiring labeled data becomes increasingly impractical. To >learn about physical object motion without labels, we develop an action-conditioned video prediction model that explicitly models >pixel motion, by predicting a distribution over pixel motion from previous frames. Because our model explicitly predicts motion, it >is partially invariant to object appearance, enabling it to generalize to previously unseen objects. To explore video prediction for >real-world interactive agents, we also introduce a dataset of 50,000 robot interactions involving pushing motions, including a test >set with novel objects. In this dataset, accurate prediction of videos conditioned on the robot's future actions amounts to learning >a "visual imagination" of different futures based on different courses of action. Our experiments show that our proposed method not >only produces more accurate video predictions, but also more accurately predicts object motion, when compared to prior methods.
+
+* **Matrix Completion and Clustering in Self-Expressive Models**
+
 Ehsan Elhamifar*, 
  
-Learning a Probabilistic Latent Space of Object Shapes via 3D Generative-Adversarial Modeling
+* **Learning a Probabilistic Latent Space of Object Shapes via 3D Generative-Adversarial Modeling**
+
 Chengkai Zhang, ; Jiajun Wu*, MIT; Tianfan Xue, ; William Freeman, ; Joshua Tenenbaum, 
  
-Probabilistic Modeling of Future Frames from a Single Image
+* **Probabilistic Modeling of Future Frames from a Single Image**
+
 Tianfan Xue*, ; Jiajun Wu, MIT; Katherine Bouman, MIT; William Freeman, 
  
-Human Decision-Making under Limited Time
+* **Human Decision-Making under Limited Time**
+ 
 Pedro Ortega*, ; Alan Stocker, 
  
-Incremental Boosting Convolutional Neural Network for Facial Action Unit Recognition
+* **Incremental Boosting Convolutional Neural Network for Facial Action Unit Recognition**
+
 Shizhong Han*, University of South Carolina; Zibo Meng, University of South Carolina; Ahmed Shehab Khan, University of South Carolina; Yan Tong, University of South Carolina
  
-Natural-Parameter Networks: A Class of Probabilistic Neural Networks
+https://cse.sc.edu/~mengz/papers/NIPS2016.pdf
+
+Abstract:
+>Recognizing facial action units (AUs) from spontaneous facial expressions is still
+>a challenging problem. Most recently, CNNs have shown promise on facial AU
+>recognition. However, the learned CNNs are often overfitted and do not gener-
+>alize well to unseen subject due to limited AU-coded training images. We pro-
+>posed a novel Incremental Boosting CNN (IB-CNN) to integrate boosting into the
+>CNN via an incremental boosting layer that selects discriminative neurons from
+>the lower layer and is incrementally updated on successive mini-batches. In ad-
+>dition, a novel loss function that accounts for errors from both the incremental
+>boosted classifier and individual weak classifiers was proposed to fine-tune the IB-
+>CNN. Experimental results on two benchmark AU databases have demonstrated
+>that the IB-CNN yields significant improvement over the traditional CNN and the
+>one without incremental learning, as well as outperforming the state-of-the-art
+>CNN-based methods in AU recognition. The improvement is more impressive for
+>the AUs that have the lowest frequencies in the databases
+
+* **Natural-Parameter Networks: A Class of Probabilistic Neural Networks**
+
 Hao Wang*, HKUST; Xingjian Shi, ; Dit-Yan Yeung, 
  
-Tree-Structured Reinforcement Learning for Sequential Object Localization
+* **Tree-Structured Reinforcement Learning for Sequential Object Localization**
+
 Zequn Jie*, National Univ of Singapore; Xiaodan Liang, Sun Yat-sen University; Jiashi Feng, National University of Singapo; Xiaojie Jin, NUS; Wen Feng Lu, National Univ of Singapore; Shuicheng Yan, 
  
-Unsupervised Domain Adaptation with Residual Transfer Networks
+* **Unsupervised Domain Adaptation with Residual Transfer Networks**
+
 Mingsheng Long*, Tsinghua University; Han Zhu, Tsinghua University; Jianmin Wang, Tsinghua University; Michael Jordan, 
- 
-Verification Based Solution for Structured MAB Problems
+
+http://arxiv.org/abs/1602.04433
+
+Abstract:
+>The recent success of deep neural networks relies on massive amounts of labeled data. For a target task where labeled data is >unavailable, domain adaptation can transfer a learner from a different source domain. In this paper, we propose a new approach to >domain adaptation in deep networks that can simultaneously learn adaptive classifiers and transferable features from labeled data in >the source domain and unlabeled data in the target domain. We relax a shared-classifier assumption made by previous methods and >assume that the source classifier and target classifier differ by a residual function. We enable classifier adaptation by plugging >several layers into the deep network to explicitly learn the residual function with reference to the target classifier. We embed >features of multiple layers into reproducing kernel Hilbert spaces (RKHSs) and match feature distributions for feature adaptation. >The adaptation behaviors can be achieved in most feed-forward models by extending them with new residual layers and loss functions, >which can be trained efficiently using standard back-propagation. Empirical evidence exhibits that the approach outperforms state of >art methods on standard domain adaptation datasets.
+
+* **Verification Based Solution for Structured MAB Problems**
+
 Zohar Karnin*, 
+
+* **Minimizing Regret on Reflexive Banach Spaces and Nash Equilibria in Continuous Zero-Sum Games**
  
-Minimizing Regret on Reflexive Banach Spaces and Nash Equilibria in Continuous Zero-Sum Games
 Maximilian Balandat*, UC Berkeley; Walid Krichene, UC Berkeley; Claire Tomlin, UC Berkeley; Alexandre Bayen, UC Berkeley
  
-Linear dynamical neural population models through nonlinear embeddings
+* **Linear dynamical neural population models through nonlinear embeddings**
+
 Yuanjun Gao, Columbia University; Evan Archer*, ; John Cunningham, ; Liam Paninski, 
- 
-SURGE: Surface Regularized Geometry Estimation from a Single Image
+
+https://arxiv.org/abs/1605.08454
+
+Abstract:
+>A body of recent work in modeling neural activity focuses on recovering low-dimensional latent features that capture the statistical >structure of large-scale neural populations. Most such approaches have focused on linear generative models, where inference is >computationally tractable. Here, we propose fLDS, a general class of nonlinear generative models that permits the firing rate of >each neuron to vary as an arbitrary smooth function of a latent, linear dynamical state. This extra flexibility allows the model to >capture a richer set of neural variability than a purely linear model, but retains an easily visualizable low-dimensional latent >space. To fit this class of non-conjugate models we propose a variational inference scheme, along with a novel approximate posterior >capable of capturing rich temporal correlations across time. We show that our techniques permit inference in a wide class of >generative models.We also show in application to two neural datasets that, compared to state-of-the-art neural population models, >fLDS captures a much larger proportion of neural variability with a small number of latent dimensions, providing superior predictive >performance and interpretability.
+
+* **SURGE: Surface Regularized Geometry Estimation from a Single Image**
+
 Peng Wang*, UCLA; Xiaohui Shen, Adobe Research; Bryan Russell, ; Scott Cohen, Adobe Research; Brian Price, ; Alan Yuille, 
- 
-Interpretable Distribution Features with Maximum Testing Power
+
+* **Interpretable Distribution Features with Maximum Testing Power**
+
 Wittawat Jitkrittum*, Gatsby Unit, UCL; Zoltan Szabo, ; Kacper Chwialkowski, Gatsby Unit, UCL; Arthur Gretton, 
- 
-Sorting out typicality with the inverse moment matrix SOS polynomial
+
+https://arxiv.org/abs/1605.06796
+
+Abstract:
+>Two semimetrics on probability distributions are proposed, given as the sum of differences of expectations of analytic functions >evaluated at spatial or frequency locations (i.e, features). The features are chosen so as to maximize the distinguishability of the >distributions, by optimizing a lower bound on test power for a statistical test using these features. The result is a parsimonious >and interpretable indication of how and where two distributions differ locally. An empirical estimate of the test power criterion >converges with increasing sample size, ensuring the quality of the returned features. In real-world benchmarks on high-dimensional >text and image data, linear-time tests using the proposed semimetrics achieve comparable performance to the state-of-the-art >quadratic-time maximum mean discrepancy test, while returning human-interpretable features that explain the test results.
+
+* **Sorting out typicality with the inverse moment matrix SOS polynomial**
+
 Edouard Pauwels*, ; Jean-Bernard Lasserre, LAAS-CNRS
- 
-Multi-armed Bandits: Competing with Optimal Sequences
+
+http://arxiv.org/abs/1606.03858
+
+Abstract:
+>We study a surprising phenomenon related to the representation of a cloud of data points using polynomials. We start with the >previously unnoticed empirical observation that, given a collection (a cloud) of data points, the sublevel sets of a certain >distinguished polynomial capture the shape of the cloud very accurately. This distinguished polynomial is a sum-of-squares (SOS) >derived in a simple manner from the inverse of the empirical moment matrix. In fact, this SOS polynomial is directly related to >orthogonal polynomials and the Christoffel function. This allows to generalize and interpret extremality properties of orthogonal >polynomials and to provide a mathematical rationale for the observed phenomenon. Among diverse potential applications, we illustrate >the relevance of our results on a network intrusion detection task for which we obtain performances similar to existing dedicated >methods reported in the literature.
+
+* **Multi-armed Bandits: Competing with Optimal Sequences**
+
 Zohar Karnin*, ; Oren Anava, Technion
- 
-Multivariate tests of association based on univariate tests
+
+* **Multivariate tests of association based on univariate tests**
+
 Ruth Heller*, Tel-Aviv University; Yair Heller, 
- 
-Learning What and Where to Draw
+
+http://arxiv.org/abs/1603.03418
+
+Abstract:
+>For testing two random vectors for independence, we consider testing whether the distance of one vector from a center point is >independent from the distance of the other vector from a center point by a univariate test. In this paper we provide conditions >under which it is enough to have a consistent univariate test of independence on the distances to guarantee that the power to detect >dependence between the random vectors increases to one, as the sample size increases. These conditions turn out to be minimal. If >the univariate test is distribution-free, the multivariate test will also be distribution-free. If we consider multiple center >points and aggregate the center-specific univariate tests, the power may be further improved, and the resulting multivariate test >may be distribution-free for specific aggregation methods (if the univariate test is distribution-free). We show that several >multivariate tests recently proposed in the literature can be viewed as instances of this general approach.
+
+* **Learning What and Where to Draw**
+
 Scott Reed*, University of Michigan; Zeynep Akata, Max Planck Institute for Informatics; Santosh Mohan, University of MIchigan; Samuel Tenka, University of MIchigan; Bernt Schiele, ; Honglak Lee, University of Michigan
- 
-The Sound of APALM Clapping: Faster Nonsmooth Nonconvex Optimization with Stochastic Asynchronous PALM
+
+* **The Sound of APALM Clapping: Faster Nonsmooth Nonconvex Optimization with Stochastic Asynchronous PALM**
+
 Damek Davis*, Cornell University; Brent Edmunds, University of California, Los Angeles; Madeleine Udell, 
- 
-Integrator Nets
+
+https://arxiv.org/abs/1606.02338
+
+Abstract:
+>We introduce the Stochastic Asynchronous Proximal Alternating Linearized Minimization (SAPALM) method, a block coordinate stochastic >proximal-gradient method for solving nonconvex, nonsmooth optimization problems. SAPALM is the first asynchronous parallel >optimization method that provably converges on a large class of nonconvex, nonsmooth problems. We prove that SAPALM matches the best >known rates of convergence --- among synchronous or asynchronous methods --- on this problem class. We provide upper bounds on the >number of workers for which we can expect to see a linear speedup, which match the best bounds known for less complex problems, and >show that in practice SAPALM achieves this linear speedup. We demonstrate state-of-the-art performance on several matrix >factorization problems.
+
+* **Integrator Nets**
+
 Hakan Bilen*, University of Oxford; Andrea Vedaldi, 
- 
-Combining Low-Density Separators with CNNs
+
+* **Combining Low-Density Separators with CNNs**
+
 Yu-Xiong Wang*, Carnegie Mellon University; Martial Hebert, Carnegie Mellon University
- 
-CNNpack: Packing Convolutional Neural Networks in the Frequency Domain
+
+* **CNNpack: Packing Convolutional Neural Networks in the Frequency Domain**
+
 Yunhe Wang*, Peking University ; Shan You, ; Dacheng Tao, ; Chao Xu, ; Chang Xu, 
- 
-Cooperative Graphical Models
+
+* **Cooperative Graphical Models**
+
 Josip Djolonga*, ETH Zurich; Stefanie Jegelka, MIT; Sebastian Tschiatschek, ETH Zurich; Andreas Krause, 
- 
-f-GAN: Training Generative Neural Samplers using Variational Divergence Minimization
+
+* **f-GAN: Training Generative Neural Samplers using Variational Divergence Minimization**
+
 Sebastian Nowozin*, Microsoft Research; Botond Cseke, Microsoft Research; Ryota Tomioka, MSRC
- 
-Bayesian Optimization for Probabilistic Programs
+
+https://arxiv.org/abs/1606.00709
+
+Abstract:
+>Generative neural samplers are probabilistic models that implement sampling using feedforward neural networks: they take a random >input vector and produce a sample from a probability distribution defined by the network weights. These models are expressive and >allow efficient computation of samples and derivatives, but cannot be used for computing likelihoods or for marginalization. The >generative-adversarial training method allows to train such models through the use of an auxiliary discriminative neural network. We >show that the generative-adversarial approach is a special case of an existing more general variational divergence estimation >approach. We show that any f-divergence can be used for training generative neural samplers. We discuss the benefits of various >choices of divergence functions on training complexity and the quality of the obtained generative models.
+
+* **Bayesian Optimization for Probabilistic Programs**
+
 Tom Rainforth*, University of Oxford; Tuan Anh Le, University of Oxford; Jan-Willem van de Meent, University of Oxford; Michael Osborne, ; Frank Wood, 
- 
-Hierarchical Question-Image Co-Attention for Visual Question Answering
+
+* **Hierarchical Question-Image Co-Attention for Visual Question Answering**
+
 Jiasen Lu*, Virginia Tech; Jianwei Yang, Virginia Tech; Dhruv Batra, ; Devi Parikh, Virginia Tech
- 
-Optimal Sparse Linear Encoders and Sparse PCA
+
+https://arxiv.org/abs/1606.00061
+
+Abstract:
+>A number of recent works have proposed attention models for Visual Question Answering (VQA) that generate spatial maps highlighting >image regions relevant to answering the question. In this paper, we argue that in addition to modeling "where to look" or visual >attention, it is equally important to model "what words to listen to" or question attention. We present a novel co-attention model >for VQA that jointly reasons about image and question attention. In addition, our model reasons about the question and consequently >the image via the co-attention mechanism in a hierarchical fashion via a novel 1-dimensional convolution neural networks (CNN) >model. Our final model outperforms all reported methods, improving the state-of-the-art on the VQA dataset from 60.4% to 62.1%, and >from 61.6% to 65.4% on the COCO-QA dataset.
+
+* **Optimal Sparse Linear Encoders and Sparse PCA**
+
 Malik Magdon-Ismail*, Rensselaer; Christos Boutsidis, 
- 
-FPNN: Field Probing Neural Networks for 3D Data
+
+* **FPNN: Field Probing Neural Networks for 3D Data**
+
 Yangyan Li*, Stanford University; Soeren Pirk, Stanford University; Hao Su, Stanford University; Charles Qi, Stanford University; Leonidas Guibas, Stanford University
- 
-CRF-CNN: Modeling Structured Information in Human Pose Estimation
+
+https://arxiv.org/abs/1605.06240
+
+Abstract:
+>Building discriminative representations for 3D data has been an important task in computer graphics and computer vision research. >Convolutional Neural Networks (CNNs) have shown to operate on 2D images with great success for a variety of tasks. Lifting >convolution operators to 3D (3DCNNs) seems like a plausible and promising next step. Unfortunately, the computational complexity of >3D CNNs grows cubically with respect to voxel resolution. Moreover, since most 3D geometry representations are boundary based, >occupied regions do not increase proportionately with the size of the discretization, resulting in wasted computation. In this work, >we represent 3D spaces as volumetric fields, and propose a novel design that employs field probing filters to efficiently extract >features from them. Each field probing filter is a set of probing points --- sensors that perceive the space. Our learning algorithm >optimizes not only the weights associated with the probing points, but also their locations, which deforms the shape of the probing >filters and adaptively distributes them in 3D space. The optimized probing points sense the 3D space "intelligently", rather than >operating blindly over the entire domain. We show that field probing is significantly more efficient than 3DCNNs, while providing >state-of-the-art performance, on classification tasks for 3D object recognition benchmark datasets.
+
+* **CRF-CNN: Modeling Structured Information in Human Pose Estimation**
+
 Xiao Chu*, Cuhk; Wanli Ouyang, ; hongsheng Li, cuhk; Xiaogang Wang, Chinese University of Hong Kong
- 
-Fairness in Learning: Classic and Contextual Bandits
+
+* **Fairness in Learning: Classic and Contextual Bandits**
+
 Matthew Joseph, University of Pennsylvania; Michael Kearns, ; Jamie Morgenstern*, University of Pennsylvania; Aaron Roth, 
- 
+
+https://arxiv.org/abs/1605.07139
+
+Abstract:
+>We introduce the study of fairness in multi-armed bandit problems. Our fairness definition can be interpreted as demanding that >given a pool of applicants (say, for college admission or mortgages), a worse applicant is never favored over a better one, despite >a learning algorithm's uncertainty over the true payoffs. We prove results of two types. 
+>First, in the important special case of the classic stochastic bandits problem (i.e., in which there are no contexts), we provide a >provably fair algorithm based on "chained" confidence intervals, and provide a cumulative regret bound with a cubic dependence on >the number of arms. We further show that any fair algorithm must have such a dependence. When combined with regret bounds for >standard non-fair algorithms such as UCB, this proves a strong separation between fair and unfair learning, which extends to the >general contextual case. 
+>In the general contextual case, we prove a tight connection between fairness and the KWIK (Knows What It Knows) learning model: a >KWIK algorithm for a class of functions can be transformed into a provably fair contextual bandit algorithm, and conversely any fair >contextual bandit algorithm can be transformed into a KWIK learning algorithm. This tight connection allows us to provide a provably >fair algorithm for the linear contextual bandit problem with a polynomial dependence on the dimension, and to show (for a different >class of functions) a worst-case exponential gap in regret between fair and non-fair learning algorithms
+
 Joint M-Best-Diverse Labelings as a Parametric Submodular Minimization
 Alexander Kirillov*, TU Dresden; Alexander Shekhovtsov, ; Carsten Rother, ; Bogdan Savchynskyy, 
  

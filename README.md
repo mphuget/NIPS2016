@@ -1,7 +1,7 @@
 # NIPS2016
 This project collects the different accepted papers for NIPS 2016 and their link to Arxiv or Gitxiv
 
-* ## Scan Order in Gibbs Sampling: Models in Which it Matters and Bounds on How Much
+* **Scan Order in Gibbs Sampling: Models in Which it Matters and Bounds on How Much**
 
 Bryan He*, Stanford University; Christopher De Sa, Stanford University; Ioannis Mitliagkas, ; Christopher Ré, Stanford University
 

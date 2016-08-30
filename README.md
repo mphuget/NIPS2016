@@ -3,7 +3,10 @@ This project collects the different accepted papers for NIPS 2016 and their link
 
 Scan Order in Gibbs Sampling: Models in Which it Matters and Bounds on How Much
 Bryan He*, Stanford University; Christopher De Sa, Stanford University; Ioannis Mitliagkas, ; Christopher Ré, Stanford University
- 
+https://arxiv.org/abs/1606.03432
+Abstract:
+Gibbs sampling is a Markov Chain Monte Carlo sampling technique that iteratively samples variables from their conditional distributions. There are two common scan orders for the variables: random scan and systematic scan. Due to the benefits of locality in hardware, systematic scan is commonly used, even though most statistical guarantees are only for random scan. While it has been conjectured that the mixing times of random scan and systematic scan do not differ by more than a logarithmic factor, we show by counterexample that this is not the case, and we prove that that the mixing times do not differ by more than a polynomial factor under mild conditions. To prove these relative bounds, we introduce a method of augmenting the state space to study systematic scan using conductance.
+
 Deep ADMM-Net for Compressive Sensing MRI
 Yan Yang, Xi'an Jiaotong University; Jian Sun*, Xi'an Jiaotong University; Huibin Li, ; Zongben Xu, 
  
